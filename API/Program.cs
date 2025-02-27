@@ -13,6 +13,7 @@ builder.Services.AddCors();
 
 var app = builder.Build();
 
+// For Angular
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod()
     .WithOrigins("http://localhost:4200", "https://localhost:4200"));
 
