@@ -59,7 +59,8 @@
           "options": {
             "ssl": true,
             "sslKey": "./ssl/localhost-key.pem",
-            "sslCert": "./ssl/localhost.pem"
+            "sslCert": "./ssl/localhost.pem",
+            "port": 4200
           },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
