@@ -8,7 +8,7 @@ import { AccountService } from './_services/account.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavComponent, HomeComponent],
+  imports: [RouterOutlet, NavComponent],
   styleUrls: ['./app.component.css'],
   templateUrl: './app.component.html',
 })
