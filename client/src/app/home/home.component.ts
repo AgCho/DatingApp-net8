@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { RegisterComponent } from "../register/register.component";
 
 @Component({
@@ -15,8 +15,8 @@ export class HomeComponent {
     this.registerMode = !this.registerMode;
   }
 
-  cancelRegisterMode(event: boolean) {
-    this.registerMode = event;
+  cancelRegisterMode(event: Event) {
+    this.registerMode = (event.target as HTMLInputElement).checked;;
   }
 
 }
